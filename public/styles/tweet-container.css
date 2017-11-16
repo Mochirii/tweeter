@@ -1,0 +1,78 @@
+.tweet {
+  margin: 2em 0;
+  position:relative;
+  border: 1px solid #ccc; 
+  border-radius: 6px;
+  background-color: #fff;
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.tweet:hover {
+  opacity: 1;
+}
+
+.tweet .tweet-header {
+  background-color: #eee;
+  width:auto;
+  height:60px;
+
+}
+
+.tweet .tweet-header .avatar {
+  width: 52px;
+  height: 52px;
+  margin: 2px;
+  padding-top: 4px;
+  padding-left: 4px;
+  border: 0 none #ccc; 
+  border-radius: 8px;
+  float: left;
+  position: relative;
+}
+
+.tweet .tweet-header .name {
+  width:auto;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+}
+
+.tweet .tweet-header .username {
+  width:auto;
+  padding-right: 20px;
+  float:right;
+  color: #808080;
+  line-height: 60px;
+
+}
+
+.tweet .tweet-body {
+  width:auto;
+  height:auto;
+  padding: 20px 10px 20px;
+  font-size: 16px;
+  
+}
+
+.tweet .tweet-footer {
+  width:auto;
+  height:auto;
+  padding: 10px;
+  font-size: 12px;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.tweet .tweet-footer .list-group {
+float: right;
+}
+
+.tweet .tweet-footer .list-group a:link{
+  color:#244751;
+}
