@@ -1,7 +1,6 @@
 .new-tweet {
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 2em;
   border: 1px solid #ccc; 
   border-radius: 6px;
   background-color: #eee;
@@ -16,7 +15,7 @@ textarea {
   height: 50px;
 }
 
-div input[type="submit" i] {
+div input[type="submit" ] {
   float: left;
 }
 
@@ -28,3 +27,16 @@ div input[type="submit" i] {
   float: right;
 }
   
+.error-empty{
+  padding-left: 10px;
+  font-size: 12px;  
+  color:red;
+  display:none;
+}
+.error-limit{
+  padding-left: 10px;
+  font-size: 12px;    
+  color:red;
+  display:none;
+  
+}

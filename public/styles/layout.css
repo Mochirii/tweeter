@@ -37,3 +37,7 @@ body {
   margin-top: 80px;
   background-color: #fff;
 }
+
+.clearfix {
+  clear: both;
+}

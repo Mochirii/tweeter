@@ -37,6 +37,9 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <span class="header-buttons">
+        <div id="compose">Compose</div>
+      </span>    
     </nav>
 
    
@@ -44,33 +47,20 @@
     <main class="container">
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
-            <form action="/tweets" method="post">
-              <textarea name="text" placeholder="What are you humming about?"></textarea>
+            <form id="add-tweet-form" action="/tweets" method="post">
+              <textarea class="text" name="text" placeholder="What are you humming about?"></textarea>
               
-              <div><input type="submit" value="Tweet">
+              <div><input id="submit-form" type="submit" value="Tweet">
               <span class="counter">140</span></div>
-              
+              <div class="clearfix"></div>
             </form>
+            <span class="error-empty">Tweet cannot be empty</span>
+            <span class="error-limit">Character limit exceeded</span>
             
           </section>
           <div>
             <section class="tweet-container">
-              <article class="tweet">
-                <header class="tweet-header">
-                  <img class="avatar" src="/images/crying.png">
-                  <span class="name">Bill Fields</span>
-                  <span class="username">@mrfields</span>
-                </header>
-                <div class="tweet-body">little tweet here</div>
-                <footer class="tweet-footer">
-                  <span class="time-stamp">10 days ago</span>
-                  <span class="list-group">
-                      <a class="list-group-item" href="#"><i class="fa fa-flag fa-fw"></i></a>
-                      <a class="list-group-item" href="#"><i class="fa fa-retweet fa-fw" ></i></a>
-                      <a class="list-group-item" href="#"><i class="fa fa-heart fa-fw" ></i></a>
-                  </span>
-                </footer>
-              </article>
+              
             </section>
           </div>
                   

@@ -7,16 +7,14 @@ $(document).ready(function() {
   var $counter = $(".counter");
 
   $('textarea').keyup(function() {
-      var text_length = $(this).val().length;
-      var text_remaining = text_max - text_length;
+    var text_length = $(this).val().length;
+    var text_remaining = text_max - text_length;
 
-      $textCounter.text(text_remaining);
+    $textCounter.text(text_remaining);
 
-      if (text_length <= text_max) {
-        return $counter.css("color", "#0A3517");
-      
-      }
-        
+    if (text_length <= text_max) {
+      return $counter.css("color", "#0A3517");  
+    }
       $counter.css("color", "#ff0000");;
     });
   })

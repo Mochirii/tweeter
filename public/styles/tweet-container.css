@@ -70,9 +70,9 @@
 }
 
 .tweet .tweet-footer .list-group {
-float: right;
-opacity: 0;
-transition: opacity, 1s ease 0s;
+  float: right;
+  opacity: 0;
+  transition: opacity, 1s ease 0s;
 }
 
 .tweet:hover .tweet-footer .list-group {
