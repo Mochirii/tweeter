@@ -4,6 +4,7 @@ Tweeter is a simple, single-page Twitter clone that utilises HTML, CSS, JS, jQue
 
  Currently it allows users to type out a message, or "tweet", between 1 and 140 characters and "post" it to the same page. Each tweet is added in a descending order, where the most recent tweet appears at the top of the page,with a time stamp in the bottom left corner to indicate how long ago the tweet was created. 
 
+!["Main Features Screenshot"](https://github.com/Mochirii/tweeter/blob/master/docs/Tweeter_main.jpg?raw=true)
 
 
 
@@ -33,4 +34,8 @@ Tweeter is a simple, single-page Twitter clone that utilises HTML, CSS, JS, jQue
  5. Character Counter in the lower right corner indicates how many characters a user has remaining. Once the characted limit has been reached, the counter colour will change from black to red. 
  6. Error message alerts indicate if you have tried to post an empty tweet or are trying to post a tweet longer than 140 characters long, and will not allow the tweet to be posted.
 
+## Future Changes
 
+1. Login/Registration feature.
+2. Full functionality when it comes to the "Like" button.
+3. Implementation of SASS
