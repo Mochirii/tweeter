@@ -2,10 +2,10 @@
 
 // Basic express setup:
 
-const PORT          = 8080;
-const express       = require("express");
-const bodyParser    = require("body-parser");
-const app           = express();
+const PORT = 8080;
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 const ObjectID = require('mongodb').ObjectID;
@@ -16,9 +16,9 @@ app.use(express.static("public"));
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
 
-const DataHelpers = require("./lib/data-helpers.js")(db);
+  const DataHelpers = require("./lib/data-helpers.js")(db);
 
- 
+
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
   app.use("/tweets", tweetsRoutes);

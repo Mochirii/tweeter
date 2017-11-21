@@ -1,8 +1,11 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone that utilises HTML, CSS, JS, jQuery and AJAX (front-end) as well as Node, Express and MongoDB (back-end).
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+ Currently it allows users to type out a message, or "tweet", between 1 and 140 characters and "post" it to the same page. Each tweet is added in a descending order, where the most recent tweet appears at the top of the page,with a time stamp in the bottom left corner to indicate how long ago the tweet was created. 
+
+
+
 
 ## Getting Started
 
@@ -13,5 +16,21 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
 - Node 5.10.x or above
+- body-parser 
+- chance
+- express
+- md5
+- moment
+- mongodb
+
+## Features
+ 
+ 1. A fixed navigation bar containing a compose button. This button shows/hides the Compose Tweet box
+ 2. Compose Tweet box for writing new tweets. Once the submit button has been pressed, the page refreshes automatically and loads the new tweet.
+ 3. Centred column containing all of the tweets that have already been posted. 
+ 4. Tweets have an opacity of 0.5 and appear fully opaque when hovered over individually. "Flag", "Re-tweet" and "Like" buttons appear in the lower right corner upon hover as well.
+ 5. Character Counter in the lower right corner indicates how many characters a user has remaining. Once the characted limit has been reached, the counter colour will change from black to red. 
+ 6. Error message alerts indicate if you have tried to post an empty tweet or are trying to post a tweet longer than 140 characters long, and will not allow the tweet to be posted.
+
+

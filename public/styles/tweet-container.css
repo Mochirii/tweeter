@@ -19,7 +19,6 @@
   background-color: #eee;
   width:auto;
   height:60px;
-
 }
 
 .tweet .tweet-header .avatar {
@@ -50,7 +49,6 @@
   float:right;
   color: #808080;
   line-height: 60px;
-
 }
 
 .tweet .tweet-body {
@@ -58,7 +56,6 @@
   height:auto;
   padding: 20px 10px 20px;
   font-size: 16px;
-  
 }
 
 .tweet .tweet-footer {
